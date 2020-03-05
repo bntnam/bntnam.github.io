@@ -11,7 +11,7 @@ import talkImg from '../images/talk.png';
 
 const MainWrapper = styled.div`
   color: #222f3e;
-  font-family: 'Lato';
+  font-family: 'Ubuntu';
   font-weight: 400;
 
   h2 {
@@ -251,7 +251,7 @@ class Main extends React.Component {
               <img src={sideProjectImg} className="side-project-img" alt="" />
             </span>
             <p>
-              <h5>I have joined in several commercial projects:</h5>
+              <h5>Several commercial projects that I've joined in:</h5>
               <h4>
                 <a
                   className="url"
@@ -263,7 +263,7 @@ class Main extends React.Component {
                 </a>
               </h4>
               <ul>
-                <li>Utilo landing website</li>
+                <li>Utilo web application</li>
                 <li>
                   Technology: GatsbyJS, ReactJS, NodeJS, Styled Components,
                   Styled Systems, Storybook, HTML, CSS
@@ -280,9 +280,9 @@ class Main extends React.Component {
                 </a>
               </h4>
               <ul>
-                <li>Polidea blog posts & landing pages</li>
+                <li>Polidea web application</li>
                 <li>
-                  Technology: GatsbyJS, ReactJS, NodeJS, Storybook, Styled
+                  Technology: GatsbyJS, ReactJS, Strapi, Storybook, Styled
                   Components, Styled Systems, HTML, CSS
                 </li>
               </ul>
@@ -334,7 +334,6 @@ class Main extends React.Component {
                   React 16.8.
                 </li>
                 <li>
-                  Slide:{' '}
                   <a
                     className="url"
                     href="http://bntnam.com/files/react-hooks-talk.pdf"
@@ -352,7 +351,7 @@ class Main extends React.Component {
               <img src={openSourceImg} className="open-source-img" alt="" />
             </span>
             <p>
-              <h5>I am a contributor at:</h5>
+              <h5>I've been contributing to:</h5>
               <h4>Strapi</h4>
               <ul>
                 <li>
@@ -360,7 +359,6 @@ class Main extends React.Component {
                   APIs with no effort.
                 </li>
                 <li>
-                  Solved an issue and enhance documentation:{' '}
                   <a
                     className="url"
                     href="https://github.com/strapi/strapi/pull/3609"
