@@ -41,10 +41,6 @@ const MainWrapper = styled.div`
     font-size: 0.8rem;
   }
 
-  ul {
-    margin: 0 0 0.5rem 0;
-  }
-
   .profile-img {
     width: 12rem;
     display: block;
@@ -143,6 +139,30 @@ const MainWrapper = styled.div`
   }
 `;
 
+const Column = styled.div`
+  display: column;
+  margin-bottom: 1rem;
+`;
+
+const TechBox = styled.div`
+  padding-bottom: 0.5rem;
+`;
+
+const TechItem = styled.span`
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid #000000;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 700;
+`;
+
+const displayItems = items => {
+  return items.map((item, index) => <TechItem key={index}>{item}</TechItem>);
+};
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -209,7 +229,7 @@ class Main extends React.Component {
             <span className="main">
               <img src={polideaImg} className="polidea-img" alt="" />
             </span>
-            <p>
+            <Column>
               <h3>Software Engineer</h3>
               <h4>4/2019 - Present at Polidea - Warsaw, Poland</h4>
               Polidea delivers digital solutions that empower people and
@@ -218,13 +238,13 @@ class Main extends React.Component {
               here to translate your idea into a perfectly crafted mobile
               application, mixed reality experience, Internet of Things solution
               or the whole digital ecosystem.
-            </p>
+            </Column>
           </div>
           <div className="exp-kms">
             <span className="main">
               <img src={kmsTechnologyImg} className="kms-img" alt="" />
             </span>
-            <p>
+            <Column>
               <h3>Software Intern</h3>
               <h4>6/2018 - 10/2018 at KMS Technology - Vietnam</h4>
               KMS Technology is a US-based product engineering and services
@@ -232,7 +252,7 @@ class Main extends React.Component {
               primarily with software companies to accelerate the delivery of
               innovative software solutions and make offshore outsourcing easier
               and more effective.
-            </p>
+            </Column>
           </div>
           {close}
         </article>
@@ -250,8 +270,8 @@ class Main extends React.Component {
             <span className="main">
               <img src={sideProjectImg} className="side-project-img" alt="" />
             </span>
-            <p>
-              <h5>Several commercial projects that I've joined in:</h5>
+            <Column>
+              <h5>A list of showcases:</h5>
               <h4>
                 <a
                   className="url"
@@ -262,13 +282,18 @@ class Main extends React.Component {
                   Utilo
                 </a>
               </h4>
-              <ul>
-                <li>Utilo web application</li>
-                <li>
-                  Technology: GatsbyJS, ReactJS, NodeJS, Styled Components,
-                  Styled Systems, Storybook, HTML, CSS
-                </li>
-              </ul>
+              <TechBox>
+                {displayItems([
+                  'React',
+                  'Gatsby',
+                  'Node',
+                  'Styled Components',
+                  'Styled Systems',
+                  'Storybook',
+                  'HTML',
+                  'CSS',
+                ])}
+              </TechBox>
               <h4>
                 <a
                   className="url"
@@ -279,13 +304,18 @@ class Main extends React.Component {
                   Polidea
                 </a>
               </h4>
-              <ul>
-                <li>Polidea web application</li>
-                <li>
-                  Technology: GatsbyJS, ReactJS, Strapi, Storybook, Styled
-                  Components, Styled Systems, HTML, CSS
-                </li>
-              </ul>
+              <TechBox>
+                {displayItems([
+                  'React',
+                  'Gatsby',
+                  'Strapi',
+                  'Storybook',
+                  'Styled Components',
+                  'Styled Systems',
+                  'HTML',
+                  'CSS',
+                ])}
+              </TechBox>
               <h4>
                 <a
                   className="url"
@@ -296,80 +326,83 @@ class Main extends React.Component {
                   Katalon
                 </a>
               </h4>
-              <ul>
-                <li>Katalon monitoring & analytics application</li>
-                <li>
-                  Technology: Spring, Hibernate, ReactJS, SASS, Semantic UI,
-                  React Bootstrap, HTML, CSS
-                </li>
-              </ul>
-              <h4>OutOfOffice (Internal)</h4>
-              <ul>
-                <li>The time reporting application</li>
-                <li>
-                  Technology: NextJS, ReactJS, Semantic UI, Styled Component,
-                  HTML, CSS
-                </li>
-              </ul>
-              <h4>VoD (Internal)</h4>
-              <ul>
-                <li>The Video on Demand application</li>
-                <li>
-                  Technology: ReactJS, Redux, Firebase, Semantic UI, Styled
-                  Component, HTML, CSS
-                </li>
-              </ul>
-            </p>
+              <TechBox>
+                {displayItems([
+                  'React',
+                  'Spring',
+                  'Hibernate',
+                  'SASS',
+                  'Bootstrap',
+                  'PostgresSQL',
+                  'HTML',
+                  'CSS',
+                ])}
+              </TechBox>
+              <h4>
+                <a
+                  className="url"
+                  href="https://bntn-devchat.firebaseapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dev Chat
+                </a>
+              </h4>
+              <TechBox>
+                {displayItems([
+                  'React',
+                  'Redux',
+                  'Firebase',
+                  'Semantic UI',
+                  'HTML',
+                  'CSS',
+                ])}
+              </TechBox>
+            </Column>
           </div>
           <div className="talk">
             <span className="main">
               <img src={talkImg} className="talk-img" alt="" />
             </span>
-            <p>
+            <Column>
               <h5>Some of my public speaking about tech:</h5>
-              <h4>Setting foot on React Hooks</h4>
-              <ul>
-                <li>
-                  Internal talk about React Hooks which are a new addition in
-                  React 16.8.
-                </li>
-                <li>
-                  <a
-                    className="url"
-                    href="http://bntnam.com/files/react-hooks-talk.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    http://bntnam.com/files/react-hooks-talk.pdf
-                  </a>
-                </li>
-              </ul>
-            </p>
+              <h4>
+                <a
+                  className="url"
+                  href="http://bntnam.com/files/react-hooks-talk.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Setting foot on React Hooks
+                </a>
+              </h4>
+              <p>
+                Internal talk about React Hooks which are a new addition in
+                React 16.8.
+              </p>
+            </Column>
           </div>
           <div className="open-source">
             <span className="main">
               <img src={openSourceImg} className="open-source-img" alt="" />
             </span>
-            <p>
+            <Column>
               <h5>I've been contributing to:</h5>
-              <h4>Strapi</h4>
-              <ul>
-                <li>
-                  The most advanced open-source Headless-CMS to build powerful
-                  APIs with no effort.
-                </li>
-                <li>
-                  <a
-                    className="url"
-                    href="https://github.com/strapi/strapi/pull/3609"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://github.com/strapi/strapi/pull/3609
-                  </a>
-                </li>
-              </ul>
-            </p>
+              <h4>
+                <a
+                  className="url"
+                  href="https://github.com/strapi/strapi/pull/3609"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Strapi
+                </a>
+              </h4>
+              <p>
+                The most advanced open-source Headless-CMS to build powerful
+                APIs with no effort.
+              </p>
+            </Column>
           </div>
           {close}
         </article>

@@ -65,44 +65,40 @@ const Header = props => (
       <nav>
         <ul>
           <li>
-            <a
-              href="javascript:;"
+            <button
               onClick={() => {
                 props.onOpenArticle('intro');
               }}
             >
               Intro
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="javascript:;"
+            <button
               onClick={() => {
                 props.onOpenArticle('work');
               }}
             >
               Work
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="javascript:;"
+            <button
               onClick={() => {
                 props.onOpenArticle('about');
               }}
             >
               Contrib
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="javascript:;"
+            <button
               onClick={() => {
                 props.onOpenArticle('contact');
               }}
             >
               Contact
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
