@@ -245,7 +245,7 @@ class Main extends React.Component {
               <img src={kmsTechnologyImg} className="kms-img" alt="" />
             </span>
             <Column>
-              <h3>Software Intern</h3>
+              <h3>Software Engineer</h3>
               <h4>6/2018 - 10/2018 at KMS Technology - Vietnam</h4>
               KMS Technology is a US-based product engineering and services
               company with development and testing centers in Vietnam. We work
