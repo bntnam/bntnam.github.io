@@ -49,7 +49,7 @@ const MainWrapper = styled.div`
 
   .button-wrapper {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 2.5rem 0;
   }
 
   .download-button {
