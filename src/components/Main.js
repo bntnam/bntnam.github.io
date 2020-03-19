@@ -333,7 +333,7 @@ class Main extends React.Component {
                   'Hibernate',
                   'SASS',
                   'Bootstrap',
-                  'PostgresSQL',
+                  'PostgreSQL',
                   'HTML',
                   'CSS',
                 ])}
