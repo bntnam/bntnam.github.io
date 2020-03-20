@@ -195,12 +195,12 @@ class Main extends React.Component {
           <p />
           <p>
             I am a Front-End Software Engineer with professional experience
-            building the responsive web design and progressive web application.
+            building the Responsive Web Design and Progressive Web Application.
             I specialize in JavaScript and its ecosystems such as React, Gatsby,
             Next, and Node with hands-on experience of handling Universal
-            Javascript, Client Side Rendering and Server Side Rendering
-            applications. I also have experience with Java and Python. Moreover,
-            learning new technologies is what I am passionate about.
+            Javascript, Client Side Rendering, Static Site Generation and Server
+            Side Rendering applications. Moreover, learning new technologies is
+            what I am passionate about.
           </p>
           <div className="button-wrapper">
             <a
