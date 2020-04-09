@@ -198,8 +198,8 @@ class Main extends React.Component {
             building the Responsive Web Design and Progressive Web Application.
             I specialize in JavaScript and its ecosystems such as React, Gatsby,
             Next, and Node with hands-on experience of handling Universal
-            Javascript, Client Side Rendering, Static Site Generation and Server
-            Side Rendering applications. Moreover, learning new technologies is
+            Javascript, Client Side Rendering, Server Side Rendering and Static
+            Site Generation applications. Moreover, learning new technologies is
             what I am passionate about.
           </p>
           <div className="button-wrapper">
@@ -231,7 +231,7 @@ class Main extends React.Component {
             </span>
             <Column>
               <h3>Software Engineer</h3>
-              <h4>4/2019 - Present at Polidea - Warsaw, Poland</h4>
+              <h4>01/2019 - Present at Polidea - Warsaw, Poland</h4>
               Polidea delivers digital solutions that empower people and
               businesses. Together, we create intuitive digital interfaces,
               enabling smooth interactions between people and technology. We are
@@ -246,7 +246,7 @@ class Main extends React.Component {
             </span>
             <Column>
               <h3>Software Engineer</h3>
-              <h4>6/2018 - 10/2018 at KMS Technology - Vietnam</h4>
+              <h4>06/2018 - 10/2018 at KMS Technology - Vietnam</h4>
               KMS Technology is a US-based product engineering and services
               company with development and testing centers in Vietnam. We work
               primarily with software companies to accelerate the delivery of
