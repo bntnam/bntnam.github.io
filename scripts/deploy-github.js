@@ -4,7 +4,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/bntnam/bntnam.github.io.git',
+    repo: 'git@github.com:bntnam/bntnam.github.io.git',
   },
   () => {
     console.log('Deploy Completed!');
