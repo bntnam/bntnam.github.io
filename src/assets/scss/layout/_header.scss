@@ -255,7 +255,8 @@
       ul {
         @include vendor('flex-direction', 'column');
         min-width: 10rem;
-        max-width: 100%;
+        max-width: 50%;
+        margin: 0 auto;
 
         li {
           border-left: 0;
