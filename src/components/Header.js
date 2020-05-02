@@ -1,10 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   h1 {
     text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 33px;
   }
 
   p {
@@ -16,11 +19,17 @@ const HeaderWrapper = styled.div`
   a {
     font-weight: 700;
   }
+
+  @media (max-width: 720px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
 `;
 
 const Header = props => (
   <HeaderWrapper>
-    <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+    <header id="header" style={props.timeout ? { display: "none" } : {}}>
       <div className="logo">
         <span className="icon fa-code"></span>
       </div>
@@ -67,7 +76,7 @@ const Header = props => (
           <li>
             <button
               onClick={() => {
-                props.onOpenArticle('intro');
+                props.onOpenArticle("intro");
               }}
             >
               Intro
@@ -76,7 +85,7 @@ const Header = props => (
           <li>
             <button
               onClick={() => {
-                props.onOpenArticle('work');
+                props.onOpenArticle("work");
               }}
             >
               Work
@@ -85,7 +94,7 @@ const Header = props => (
           <li>
             <button
               onClick={() => {
-                props.onOpenArticle('about');
+                props.onOpenArticle("about");
               }}
             >
               Contrib
@@ -94,7 +103,7 @@ const Header = props => (
           <li>
             <button
               onClick={() => {
-                props.onOpenArticle('contact');
+                props.onOpenArticle("contact");
               }}
             >
               Contact

@@ -1,14 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
 
-import '../assets/scss/main.scss';
+import "../assets/scss/main.scss";
+import GlobalStyle from "./GlobalStyle";
 
 const Layout = ({ children, location }) => {
   let content;
 
-  if (location && location.pathname === '/') {
+  if (location && location.pathname === "/") {
     content = <div>{children}</div>;
   } else {
     content = (
@@ -35,7 +36,7 @@ const Layout = ({ children, location }) => {
         <>
           <Helmet
             title={data.site.siteMetadata.title}
-            link={[{ rel: 'shortcut icon', href: '/logo.ico' }]}
+            link={[{ rel: "shortcut icon", href: "/logo.ico" }]}
           >
             <meta name="author" content={data.site.siteMetadata.author} />
             <meta
@@ -43,6 +44,7 @@ const Layout = ({ children, location }) => {
               content={data.site.siteMetadata.description}
             />
           </Helmet>
+          <GlobalStyle />
           {content}
         </>
       )}
