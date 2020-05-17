@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import Main from '../components/Main';
-import Footer from '../components/Footer';
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -12,23 +12,23 @@ class IndexPage extends React.Component {
       isArticleVisible: false,
       timeout: false,
       articleTimeout: false,
-      article: '',
-      loading: 'is-loading',
+      article: "",
+      loading: "is-loading",
     };
   }
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' });
+      this.setState({ loading: "" });
     }, 1000);
-    document.addEventListener('mousedown', this.handleClickOutside);
+    document.addEventListener("mousedown", this.handleClickOutside);
   }
 
   componentWillUnmount() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
-    document.removeEventListener('mousedown', this.handleClickOutside);
+    document.removeEventListener("mousedown", this.handleClickOutside);
   }
 
   setWrapperRef = node => {
@@ -68,7 +68,7 @@ class IndexPage extends React.Component {
     setTimeout(() => {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
-        article: '',
+        article: "",
       });
     }, 350);
   };
@@ -86,7 +86,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location}>
         <div
           className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? 'is-article-visible' : ''
+            this.state.isArticleVisible ? "is-article-visible" : ""
           }`}
         >
           <div id="wrapper">

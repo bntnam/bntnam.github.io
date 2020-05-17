@@ -7,24 +7,24 @@
 /* Main */
 
 #main {
-  @include vendor('flex-grow', '1');
-  @include vendor('flex-shrink', '1');
-  @include vendor('display', 'flex');
-  @include vendor('align-items', 'center');
-  @include vendor('justify-content', 'center');
-  @include vendor('flex-direction', 'column');
+  @include vendor("flex-grow", "1");
+  @include vendor("flex-shrink", "1");
+  @include vendor("display", "flex");
+  @include vendor("align-items", "center");
+  @include vendor("justify-content", "center");
+  @include vendor("flex-direction", "column");
   position: relative;
   max-width: 100%;
   z-index: 3;
   display: none;
 
   article {
-    @include vendor('transform', 'translateY(0.25rem)');
+    @include vendor("transform", "translateY(0.25rem)");
     @include vendor(
-      'transition',
+      "transition",
       (
-        'opacity #{_duration(article)} ease-in-out',
-        'transform #{_duration(article)} ease-in-out'
+        "opacity #{_duration(article)} ease-in-out",
+        "transform #{_duration(article)} ease-in-out"
       )
     );
     @include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
@@ -41,7 +41,7 @@
     }
 
     &.active.timeout {
-      @include vendor('transform', 'translateY(0)');
+      @include vendor("transform", "translateY(0)");
       opacity: 1;
     }
 
@@ -63,10 +63,10 @@
 
       &:before {
         @include vendor(
-          'transition',
-          'background-color #{_duration(transition)} ease-in-out'
+          "transition",
+          "background-color #{_duration(transition)} ease-in-out"
         );
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 0.75rem;

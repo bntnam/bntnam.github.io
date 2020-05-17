@@ -73,19 +73,19 @@ label {
   text-transform: uppercase;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='tel'],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
 select,
 textarea {
-  @include vendor('appearance', 'none');
+  @include vendor("appearance", "none");
   @include vendor(
-    'transition',
+    "transition",
     (
-      'border-color #{_duration(transition)} ease-in-out',
-      'box-shadow #{_duration(transition)} ease-in-out',
-      'background-color #{_duration(transition)} ease-in-out'
+      "border-color #{_duration(transition)} ease-in-out",
+      "box-shadow #{_duration(transition)} ease-in-out",
+      "background-color #{_duration(transition)} ease-in-out"
     )
   );
   background: transparent;
@@ -123,7 +123,7 @@ select {
 
   &:before {
     color: _palette(border);
-    content: '\f107';
+    content: "\f107";
     display: block;
     height: _size(element-height);
     //line-height: _size(element-height);
@@ -141,9 +141,9 @@ select {
   }
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
+input[type="text"],
+input[type="password"],
+input[type="email"],
 select {
   height: _size(element-height);
 }
@@ -152,9 +152,9 @@ textarea {
   padding: 0.75rem 1rem;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
-  @include vendor('appearance', 'none');
+input[type="checkbox"],
+input[type="radio"] {
+  @include vendor("appearance", "none");
   display: block;
   float: left;
   margin-right: -2rem;
@@ -164,7 +164,7 @@ input[type='radio'] {
 
   & + label {
     @include icon;
-    @include vendor('user-select', 'none');
+    @include vendor("user-select", "none");
     color: _palette(fg);
     cursor: pointer;
     display: inline-block;
@@ -177,16 +177,16 @@ input[type='radio'] {
 
     &:before {
       @include vendor(
-        'transition',
+        "transition",
         (
-          'border-color #{_duration(transition)} ease-in-out',
-          'box-shadow #{_duration(transition)} ease-in-out',
-          'background-color #{_duration(transition)} ease-in-out'
+          "border-color #{_duration(transition)} ease-in-out",
+          "box-shadow #{_duration(transition)} ease-in-out",
+          "background-color #{_duration(transition)} ease-in-out"
         )
       );
       border-radius: _size(border-radius);
       border: solid _size(border-width) _palette(border);
-      content: '';
+      content: "";
       display: inline-block;
       height: (_size(element-height) * 0.6);
       left: 0;
@@ -204,7 +204,7 @@ input[type='radio'] {
       background: _palette(fg-bold) !important;
       border-color: _palette(fg-bold) !important;
       color: _palette(bg);
-      content: '\f00c';
+      content: "\f00c";
     }
   }
 
@@ -217,7 +217,7 @@ input[type='radio'] {
   }
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   & + label {
     &:before {
       border-radius: _size(border-radius);
@@ -225,7 +225,7 @@ input[type='checkbox'] {
   }
 }
 
-input[type='radio'] {
+input[type="radio"] {
   & + label {
     &:before {
       border-radius: 100%;

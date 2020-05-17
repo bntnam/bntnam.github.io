@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
-import profileImg from '../images/profile.png';
-import polideaImg from '../images/polidea.png';
-import kmsTechnologyImg from '../images/kms-technology.png';
-import sideProjectImg from '../images/project.png';
-import openSourceImg from '../images/open-source.png';
-import talkImg from '../images/talk.png';
+import profileImg from "../images/profile.png";
+import polideaImg from "../images/polidea.png";
+import kmsTechnologyImg from "../images/kms-technology.png";
+import sideProjectImg from "../images/project.png";
+import openSourceImg from "../images/open-source.png";
+import talkImg from "../images/talk.png";
 
 const MainWrapper = styled.div`
   color: #222f3e;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-weight: 400;
 
   h2 {
@@ -178,15 +178,15 @@ class Main extends React.Component {
       <MainWrapper
         ref={this.props.setWrapperRef}
         id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+        style={this.props.timeout ? { display: "flex" } : { display: "none" }}
       >
         {/* Intro */}
         <article
           id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "intro" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Intro</h2>
           <span className="main">
@@ -209,7 +209,7 @@ class Main extends React.Component {
               rel="noopener noreferrer"
               className="icon fa-download download-button"
             >
-              {' '}
+              {" "}
               My CV!
             </a>
           </div>
@@ -219,10 +219,10 @@ class Main extends React.Component {
         {/* EXP */}
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "work" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Work</h2>
           <div className="exp-polidea">
@@ -260,10 +260,10 @@ class Main extends React.Component {
         {/* Contribution */}
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "about" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Contribution</h2>
           <div className="side-project">
@@ -284,14 +284,14 @@ class Main extends React.Component {
               </h4>
               <TechBox>
                 {displayItems([
-                  'React',
-                  'Gatsby',
-                  'Node',
-                  'Styled Components',
-                  'Styled Systems',
-                  'Storybook',
-                  'HTML',
-                  'CSS',
+                  "React",
+                  "Gatsby",
+                  "Node",
+                  "Styled Components",
+                  "Styled Systems",
+                  "Storybook",
+                  "HTML",
+                  "CSS",
                 ])}
               </TechBox>
               <h4>
@@ -306,14 +306,14 @@ class Main extends React.Component {
               </h4>
               <TechBox>
                 {displayItems([
-                  'React',
-                  'Gatsby',
-                  'Strapi',
-                  'Storybook',
-                  'Styled Components',
-                  'Styled Systems',
-                  'HTML',
-                  'CSS',
+                  "React",
+                  "Gatsby",
+                  "Strapi",
+                  "Storybook",
+                  "Styled Components",
+                  "Styled Systems",
+                  "HTML",
+                  "CSS",
                 ])}
               </TechBox>
               <h4>
@@ -328,14 +328,14 @@ class Main extends React.Component {
               </h4>
               <TechBox>
                 {displayItems([
-                  'React',
-                  'Spring',
-                  'Hibernate',
-                  'SASS',
-                  'Bootstrap',
-                  'PostgreSQL',
-                  'HTML',
-                  'CSS',
+                  "React",
+                  "Spring",
+                  "Hibernate",
+                  "SASS",
+                  "Bootstrap",
+                  "PostgreSQL",
+                  "HTML",
+                  "CSS",
                 ])}
               </TechBox>
               <h4>
@@ -350,12 +350,12 @@ class Main extends React.Component {
               </h4>
               <TechBox>
                 {displayItems([
-                  'React',
-                  'Redux',
-                  'Firebase',
-                  'Semantic UI',
-                  'HTML',
-                  'CSS',
+                  "React",
+                  "Redux",
+                  "Firebase",
+                  "Semantic UI",
+                  "HTML",
+                  "CSS",
                 ])}
               </TechBox>
             </Column>
@@ -410,10 +410,10 @@ class Main extends React.Component {
         {/* Contact */}
         <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "contact" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Contact</h2>
           <h3>Let's get in touch!</h3>
