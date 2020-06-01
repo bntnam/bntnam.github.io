@@ -1,163 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 
+import {
+  MainWrapper,
+  Column,
+  TechBox,
+  TechItem,
+  VerticalPadding,
+} from "./common";
 import profileImg from "../images/profile.png";
 import polideaImg from "../images/polidea.png";
 import kmsTechnologyImg from "../images/kms-technology.png";
 import sideProjectImg from "../images/project.png";
 import openSourceImg from "../images/open-source.png";
 import talkImg from "../images/talk.png";
-
-const MainWrapper = styled.div`
-  color: #222f3e;
-  font-family: "Ubuntu";
-  font-weight: 400;
-
-  h2 {
-    color: #222f3e;
-    border-bottom: solid 1px #222f3e;
-  }
-
-  h3,
-  h4,
-  h5 {
-    color: #222f3e;
-    text-transform: none;
-    letter-spacing: 0.1rem;
-    margin: 0;
-    line-height: 2;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
-  h5 {
-    font-size: 0.8rem;
-  }
-
-  .profile-img {
-    width: 12rem;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .button-wrapper {
-    text-align: center;
-    margin: 2.5rem 0;
-  }
-
-  .download-button {
-    padding: 1rem 1.5rem;
-    border-radius: 2rem;
-  }
-
-  .polidea-img,
-  .side-project-img {
-    width: 6.5rem;
-    margin-right: 1rem;
-    margin-top: 0.4rem;
-  }
-
-  .open-source-img {
-    width: 6.5rem;
-    margin-right: 1rem;
-  }
-
-  .kms-img,
-  .talk-img {
-    width: 6.5rem;
-    margin-top: 0.4rem;
-  }
-
-  .exp-polidea,
-  .open-source,
-  .side-project {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .exp-kms,
-  .talk {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  #contact {
-    text-align: center;
-  }
-
-  .icon {
-    box-shadow: inset 0 0 0 2px #222f3e;
-  }
-
-  .icon:hover {
-    color: #fff;
-    background-color: #222f3e;
-  }
-
-  .email {
-    color: #e15f41;
-    font-size: 1.2rem;
-    border-bottom: none;
-  }
-
-  .email:hover {
-    text-decoration: underline;
-  }
-
-  .url {
-    text-decoration: underline;
-    cursor: pointer;
-    border-bottom: none;
-    /* word-break: break-all; */
-  }
-
-  @media (max-width: 576px) {
-    .exp-polidea,
-    .exp-kms,
-    .open-source,
-    .talk,
-    .side-project {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .polidea-img,
-    .kms-img,
-    .open-source-img,
-    .talk-img,
-    .side-project-img {
-      display: block;
-      margin: 0 auto 1rem auto;
-    }
-  }
-`;
-
-const Column = styled.div`
-  display: column;
-  margin-bottom: 1rem;
-`;
-
-const TechBox = styled.div`
-  padding-bottom: 0.5rem;
-`;
-
-const TechItem = styled.span`
-  display: inline-block;
-  margin: 3px 3px 3px 0;
-  padding: 2px 7px;
-  border-radius: 3px;
-  border: 1px solid #000000;
-  background: transparent;
-  font-size: 0.75rem;
-  font-weight: 700;
-`;
 
 const displayItems = items => {
   return items.map((item, index) => <TechItem key={index}>{item}</TechItem>);
@@ -192,7 +48,7 @@ class Main extends React.Component {
           <span className="main">
             <img src={profileImg} className="profile-img" alt="" />
           </span>
-          <p />
+          <VerticalPadding />
           <p>
             I am a Front-End Software Engineer with professional experience
             building the Responsive Web Design and Progressive Web Application.
@@ -240,6 +96,7 @@ class Main extends React.Component {
               or the whole digital ecosystem.
             </Column>
           </div>
+          <VerticalPadding />
           <div className="exp-kms">
             <span className="main">
               <img src={kmsTechnologyImg} className="kms-img" alt="" />
@@ -358,8 +215,89 @@ class Main extends React.Component {
                   "CSS",
                 ])}
               </TechBox>
+              <h4>
+                <a
+                  className="url"
+                  href="https://bntnam.com/cs-notes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Computer Science Notes
+                </a>
+              </h4>
+              <TechBox>{displayItems(["Docsify"])}</TechBox>
+              <h4>
+                <a
+                  className="url"
+                  href="https://cssgallery.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CSS Gallery
+                </a>
+              </h4>
+              <TechBox>
+                {displayItems([
+                  "React",
+                  "Gatsby",
+                  "Styled Components",
+                  "Styled Systems",
+                  "HTML",
+                  "CSS",
+                ])}
+              </TechBox>
             </Column>
           </div>
+          <VerticalPadding />
+          <div className="open-source">
+            <span className="main">
+              <img src={openSourceImg} className="open-source-img" alt="" />
+            </span>
+            <Column>
+              <h5>I've been contributing to:</h5>
+              <h4>
+                <a
+                  className="url"
+                  href="https://github.com/apache/beam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apache Beam
+                </a>
+              </h4>
+              <p>
+                Apache Beam is an open source unified programming model to
+                define and execute data processing pipelines, including ETL,
+                batch and stream processing.
+              </p>
+              <h4>
+                <a
+                  className="url"
+                  href="https://github.com/strapi/strapi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Strapi
+                </a>
+              </h4>
+              <p>
+                The most advanced open-source Headless-CMS to build powerful
+                APIs with no effort.
+              </p>
+              <h4>
+                <a
+                  className="url"
+                  href="https://github.com/react-hook-form/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  React Hook Form
+                </a>
+              </h4>
+              <p>React hooks for forms validation without the hassle</p>
+            </Column>
+          </div>
+          <VerticalPadding />
           <div className="talk">
             <span className="main">
               <img src={talkImg} className="talk-img" alt="" />
@@ -379,28 +317,6 @@ class Main extends React.Component {
               <p>
                 Internal talk about React Hooks which are a new addition in
                 React 16.8.
-              </p>
-            </Column>
-          </div>
-          <div className="open-source">
-            <span className="main">
-              <img src={openSourceImg} className="open-source-img" alt="" />
-            </span>
-            <Column>
-              <h5>I've been contributing to:</h5>
-              <h4>
-                <a
-                  className="url"
-                  href="https://github.com/strapi/strapi/pull/3609"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Strapi
-                </a>
-              </h4>
-              <p>
-                The most advanced open-source Headless-CMS to build powerful
-                APIs with no effort.
               </p>
             </Column>
           </div>
@@ -453,8 +369,8 @@ class Main extends React.Component {
             Send me an email and I will get back to you as soon as possible!
           </h5>
           <h5>
-            <a href="mailto:bntnam.app@gmail.com" className="email">
-              bntnam.app@gmail.com
+            <a href="mailto:bntnam@gmail.com" className="email">
+              bntnam@gmail.com
             </a>
           </h5>
           <h3>:&#41;</h3>
