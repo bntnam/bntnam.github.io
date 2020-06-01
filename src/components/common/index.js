@@ -93,6 +93,8 @@ export const MainWrapper = styled.div`
 
   .icon {
     box-shadow: inset 0 0 0 2px #222f3e;
+    -webkit-box-shadow: inset 0 0 0 2px #222f3e;
+    -moz-box-shadow: inset 0 0 0 2px #222f3e;
   }
 
   .icon:hover {
@@ -133,6 +135,10 @@ export const MainWrapper = styled.div`
     .side-project-img {
       display: block;
       margin: 0 auto 1rem auto;
+    }
+
+    .icon {
+      -webkit-appearance: none;
     }
   }
 `;
