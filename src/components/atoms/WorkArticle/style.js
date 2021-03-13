@@ -14,6 +14,27 @@ export const Title = styled.h2`
   color: #222f3e;
 `;
 
+export const LineExp = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+`;
+
+export const LineImg = styled.img`
+  width: 6.5rem;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  border-radius: 50%;
+
+  @media (max-width: 576px) {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+`;
+
 export const PolideaExp = styled.div`
   display: flex;
   flex-direction: row;
@@ -27,6 +48,7 @@ export const PolideaImg = styled.img`
   width: 6.5rem;
   margin-right: 1rem;
   margin-top: 0.4rem;
+  border-radius: 50%;
 
   @media (max-width: 576px) {
     display: block;
@@ -46,6 +68,7 @@ export const KatalonExp = styled.div`
 export const KatalonImg = styled.img`
   width: 6.5rem;
   margin-top: 0.4rem;
+  border-radius: 50%;
 
   @media (max-width: 576px) {
     display: block;
