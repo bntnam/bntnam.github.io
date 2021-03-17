@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Title, Text } from "./style";
-import ArticleButton from "../atoms/ArticleButton";
-import SocialLink from "../atoms/SocialLink";
+import ArticleButton from "../../shared/atoms/elements/ArticleButton";
+import SocialLink from "../../shared/atoms/elements/SocialLink";
 
 const articles = [
   { type: "intro", text: "Intro" },

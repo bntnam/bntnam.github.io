@@ -1,7 +1,6 @@
 import React from "react";
-import { Title } from "../ContributionArticle/style";
 
-import { ContactArticleWrapper, Tile, SubTitle, Text, Email } from "./style";
+import { ContactArticleWrapper, Title, SubTitle, Text, Email } from "./style";
 
 const ContactArticle = ({ article, articleTimeout, close }) => (
   <ContactArticleWrapper

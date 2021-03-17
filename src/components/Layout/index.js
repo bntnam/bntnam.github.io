@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
 import "../../assets/scss/main.scss";
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle from "../../shared/theme/GlobalStyle";
 
 const Layout = ({ children, location }) => {
   let content;

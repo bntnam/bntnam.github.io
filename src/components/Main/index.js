@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { MainWrapper } from "./style";
-import IntroArticle from "../atoms/IntroArticle";
-import WorkArticle from "../atoms/WorkArticle";
-import ContributionArticle from "../atoms/ContributionArticle";
-import ContactArticle from "../atoms/ContactArticle";
+import IntroArticle from "../../shared/atoms/articles/Intro";
+import WorkArticle from "../../shared/atoms/articles/Work";
+import ContributionArticle from "../../shared/atoms/articles/Contribution";
+import ContactArticle from "../../shared/atoms/articles/Contact";
 
 class Main extends React.Component {
   render() {

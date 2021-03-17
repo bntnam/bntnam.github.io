@@ -14,9 +14,9 @@ import {
   LineExp,
   LineImg,
 } from "./style";
-import polideaImg from "../../../images/polidea.png";
-import lineImg from "../../../images/line.png";
-import katalonImg from "../../../images/katalon.jpeg";
+import polideaImg from "../../../../images/polidea.png";
+import lineImg from "../../../../images/line.png";
+import kmsLabsImg from "../../../../images/kms-labs.png";
 
 const WorkArticle = ({ article, articleTimeout, close }) => (
   <article
@@ -64,15 +64,18 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
     <VerticalPadding />
     <KatalonExp>
       <span className="main">
-        <KatalonImg src={katalonImg} alt="Katalon" />
+        <KatalonImg src={kmsLabsImg} alt="KMS Labs" />
       </span>
       <Column>
         <Position>Software Engineer</Position>
-        <Company>06/2018 - 10/2018 at Katalon - Vietnam</Company>
+        <Company>06/2018 - 10/2018 at KMS Labs - Vietnam</Company>
         <Description>
-          Katalon is a powerful solution that helps you automate Web, API,
-          Mobile, and Desktop apps — with smart analytics and CI/CD
-          integrations.
+          KMS Labs is a startup studio and the product development arm of KMS
+          Technology. Our team includes entrepreneurs and builders who have
+          lived through everyday struggles of launching and operating software
+          businesses for almost 2 decades. Our startups, all originated from
+          Vietnam, have acquired hundreds of thousands of users, raised funding
+          from top US VCs and one was merged with a technology unicorn.
         </Description>
       </Column>
     </KatalonExp>
