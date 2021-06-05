@@ -14,9 +14,9 @@ import {
   LineExp,
   LineImg,
 } from "./style";
-import polideaImg from "../../../../images/polidea.png";
-import lineImg from "../../../../images/line.png";
-import kmsLabsImg from "../../../../images/kms-labs.png";
+import polideaImg from "../../../images/polidea.png";
+import lineImg from "../../../images/line.png";
+import katalonImg from "../../../images/katalon.jpeg";
 
 const WorkArticle = ({ article, articleTimeout, close }) => (
   <article
@@ -50,7 +50,7 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
       </span>
       <Column>
         <Position>Software Engineer</Position>
-        <Company>01/2019 - 10/2020 at Polidea - Warsaw, Poland</Company>
+        <Company>09/2018 - 10/2020 at Polidea - Warsaw, Poland</Company>
         <Description>
           Polidea delivers digital solutions that empower people and businesses.
           Together, we create intuitive digital interfaces, enabling smooth
@@ -64,18 +64,15 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
     <VerticalPadding />
     <KatalonExp>
       <span className="main">
-        <KatalonImg src={kmsLabsImg} alt="KMS Labs" />
+        <KatalonImg src={katalonImg} alt="Katalon" />
       </span>
       <Column>
-        <Position>Software Engineer</Position>
-        <Company>06/2018 - 10/2018 at KMS Labs - Vietnam</Company>
+        <Position>Software Intern</Position>
+        <Company>06/2018 - 09/2018 at Katalon - Vietnam</Company>
         <Description>
-          KMS Labs is a startup studio and the product development arm of KMS
-          Technology. Our team includes entrepreneurs and builders who have
-          lived through everyday struggles of launching and operating software
-          businesses for almost 2 decades. Our startups, all originated from
-          Vietnam, have acquired hundreds of thousands of users, raised funding
-          from top US VCs and one was merged with a technology unicorn.
+          Our team works to provide the digital economy with efficient test
+          automation solutions, as well as building a strong community of
+          testers and developers around the world.
         </Description>
       </Column>
     </KatalonExp>

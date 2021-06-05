@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { MainWrapper } from "./style";
-import IntroArticle from "../../shared/atoms/articles/Intro";
-import WorkArticle from "../../shared/atoms/articles/Work";
-import ContributionArticle from "../../shared/atoms/articles/Contribution";
-import ContactArticle from "../../shared/atoms/articles/Contact";
+import Intro from "../../shared/modules/Intro";
+import Work from "../../shared/modules/Work";
+import Contribution from "../../shared/modules/Contribution";
+import Contact from "../../shared/modules/Contact";
 
 class Main extends React.Component {
   render() {
@@ -32,22 +32,18 @@ class Main extends React.Component {
         id="main"
         style={timeout ? { display: "flex" } : { display: "none" }}
       >
-        <IntroArticle
+        <Intro
           article={article}
           articleTimeout={articleTimeout}
           close={close}
         />
-        <WorkArticle
+        <Work article={article} articleTimeout={articleTimeout} close={close} />
+        <Contribution
           article={article}
           articleTimeout={articleTimeout}
           close={close}
         />
-        <ContributionArticle
-          article={article}
-          articleTimeout={articleTimeout}
-          close={close}
-        />
-        <ContactArticle
+        <Contact
           article={article}
           articleTimeout={articleTimeout}
           close={close}
