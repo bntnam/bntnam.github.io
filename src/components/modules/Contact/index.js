@@ -35,23 +35,18 @@ const ContactArticle = ({ article, articleTimeout, close }) => (
       </li>
       <li>
         <a
-          href="https://www.facebook.com/bntnam"
+          href="mailto:bntnam.app@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="icon fa-facebook"
+          className="icon fa-envelope"
         >
-          <span className="label">Facebook</span>
+          <span className="label">Email</span>
         </a>
       </li>
     </ul>
     <Text>
-      Send me an email and I will get back to you as soon as possible!
+      Send me an email and I will get back to you as soon as possible! :)
     </Text>
-    <Text>
-      <Email href="mailto:bntnam@gmail.com">bntnam@gmail.com</Email>
-    </Text>
-    <SubTitle>:&#41;</SubTitle>
-
     {close}
   </ContactArticleWrapper>
 );

@@ -24,18 +24,6 @@ const IntroArticle = ({ article, articleTimeout, close }) => (
       Rendering, Server Side Rendering and Static Site Generation applications.
       Moreover, learning new technologies is what I am passionate about.
     </Text>
-    {/* Temporarily remove CV button */}
-    {/* <Button>
-      <ExternalLink
-        href="./files/NamBui-CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="icon fa-download"
-      >
-        {" "}
-        My CV!
-      </ExternalLink>
-    </Button> */}
     <VerticalPadding />
     {close}
   </article>

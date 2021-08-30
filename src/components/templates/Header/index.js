@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Title, Text } from "./style";
-import ArticleButton from "../../shared/atoms/ArticleButton";
-import SocialLink from "../../shared/atoms/SocialLink";
+import ArticleButton from "../../atoms/ArticleButton";
+import SocialLink from "../../atoms/SocialLink";
 
 const articles = [
   { type: "intro", text: "Intro" },
@@ -29,9 +29,9 @@ const socialLinks = [
     text: "Linkedin",
   },
   {
-    url: "https://www.facebook.com/bntnam",
-    icon: "facebook",
-    text: "Facebook",
+    url: "mailto:bntnam.app@gmail.com",
+    icon: "envelope-o",
+    text: "Email",
   },
 ];
 
