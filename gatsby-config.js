@@ -21,5 +21,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-sass",
+    {
+      resolve: "@sentry/gatsby",
+      options: {
+        dsn: process.env.SENTRY_DNS,
+        sampleRate: 0.7,
+      },
+    },
   ],
 };
