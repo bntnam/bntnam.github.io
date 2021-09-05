@@ -33,6 +33,8 @@ jobs:
 
       - name: Build project
         run: yarn build
+        env:
+          SENTRY_DNS: ${{ secrets.SENTRY_DNS }}
 
       - name: Deploy project
         uses: peaceiris/actions-gh-pages@v3
