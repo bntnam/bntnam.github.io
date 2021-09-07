@@ -33,7 +33,7 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
       </span>
       <Column>
         <Position>Software Engineer</Position>
-        <Company>10/2020 - Present at Line - Vietnam</Company>
+        <Company>10/2020 - Present at LINE Corp - Vietnam</Company>
         <Description>
           With the LINE messaging app as the cornerstone, LINE Corporation's
           business encompasses development and operation of a wide range of
