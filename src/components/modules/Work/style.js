@@ -5,11 +5,6 @@ export const Column = styled.div`
   margin-bottom: 1rem;
 `;
 
-export const VerticalPadding = styled.div`
-  width: auto;
-  height: 30px;
-`;
-
 export const Title = styled.h2`
   color: #222f3e;
 `;

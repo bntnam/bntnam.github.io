@@ -2,7 +2,6 @@ import React from "react";
 
 import {
   Column,
-  VerticalPadding,
   Title,
   PolideaExp,
   PolideaImg,
@@ -43,7 +42,6 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
         </Description>
       </Column>
     </LineExp>
-    <VerticalPadding />
     <PolideaExp>
       <span className="main">
         <PolideaImg src={polideaImg} alt="Polidea" />
@@ -52,16 +50,15 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
         <Position>Software Engineer</Position>
         <Company>09/2018 - 10/2020 at Polidea - Warsaw, Poland</Company>
         <Description>
-          Polidea delivers digital solutions that empower people and businesses.
-          Together, we create intuitive digital interfaces, enabling smooth
-          interactions between people and technology. We are here to translate
-          your idea into a perfectly crafted mobile application, mixed reality
-          experience, Internet of Things solution or the whole digital
-          ecosystem.
+          Polidea was acquired by Snowflake on Feb 8th, 2021. In less than a
+          decade, Snowflake has become a global force to help mobilize the
+          world’s data. <br />
+          Back then, Polidea delivered digital solutions that empowered people
+          and businesses. Together, we created intuitive digital interfaces,
+          enabling smooth interactions between people and technology.
         </Description>
       </Column>
     </PolideaExp>
-    <VerticalPadding />
     <KatalonExp>
       <span className="main">
         <KatalonImg src={katalonImg} alt="Katalon" />
