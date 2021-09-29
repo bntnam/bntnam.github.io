@@ -14,8 +14,8 @@ import {
   LineExp,
   LineImg,
 } from "./style";
+import naverImg from "../../../images/naver.png";
 import polideaImg from "../../../images/polidea.png";
-import lineImg from "../../../images/line.png";
 import katalonImg from "../../../images/katalon.jpeg";
 
 const WorkArticle = ({ article, articleTimeout, close }) => (
@@ -29,17 +29,17 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
     <Title className="major">Work</Title>
     <LineExp>
       <span className="main">
-        <LineImg src={lineImg} alt="Line" />
+        <LineImg src={naverImg} alt="NAVER" />
       </span>
       <Column>
         <Position>Software Engineer</Position>
-        <Company>10/2020 - Present at LINE Corp - Vietnam</Company>
+        <Company>10/2020 - Present at NAVER Corp - Vietnam</Company>
         <Description>
-          With the LINE messaging app as the cornerstone, LINE Corporation's
-          business encompasses development and operation of a wide range of
-          mobile-first services—including communication, content, and
-          entertainment—and advertising, as well as new businesses in Fintech,
-          AI, and other domains.
+          NAVER Co., Ltd. is South Korea’s largest web search engine, as well as
+          a global ICT brand that provides services including LINE messenger,
+          currently with over 200 million users from around the world. In 2018,
+          NAVER was ranked as the 9th most innovative company by Forbes and top
+          6th Future 50 company by Fortune magazine.
         </Description>
       </Column>
     </LineExp>

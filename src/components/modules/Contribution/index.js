@@ -115,6 +115,49 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
         <ProjectName>
           <ExternalLink
             className="url"
+            href="https://www.vlive.tv/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            V Live
+          </ExternalLink>
+        </ProjectName>
+        <TechBox>
+          {renderTechItems([
+            "React",
+            "Storybook",
+            "React Hook Form",
+            "React Testing Library",
+            "Apache Echarts",
+            "HTML",
+            "CSS",
+          ])}
+        </TechBox>
+        <ProjectName>
+          <ExternalLink
+            className="url"
+            href="https://analytics.katalon.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Katalon
+          </ExternalLink>
+        </ProjectName>
+        <TechBox>
+          {renderTechItems([
+            "React",
+            "Spring",
+            "Hibernate",
+            "SASS",
+            "Bootstrap",
+            "PostgreSQL",
+            "HTML",
+            "CSS",
+          ])}
+        </TechBox>
+        <ProjectName>
+          <ExternalLink
+            className="url"
             href="https://utilodesign.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -152,28 +195,6 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
             "Storybook",
             "Styled Components",
             "Styled Systems",
-            "HTML",
-            "CSS",
-          ])}
-        </TechBox>
-        <ProjectName>
-          <ExternalLink
-            className="url"
-            href="https://analytics.katalon.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Katalon
-          </ExternalLink>
-        </ProjectName>
-        <TechBox>
-          {renderTechItems([
-            "React",
-            "Spring",
-            "Hibernate",
-            "SASS",
-            "Bootstrap",
-            "PostgreSQL",
             "HTML",
             "CSS",
           ])}
