@@ -3,6 +3,8 @@ import React from "react";
 import {
   Column,
   Title,
+  FoodpandaExp,
+  FoodpandaImg,
   PolideaExp,
   PolideaImg,
   KatalonExp,
@@ -13,6 +15,7 @@ import {
   LineExp,
   LineImg,
 } from "./style";
+import foodpandaImg from "../../../images/foodpanda.png";
 import naverImg from "../../../images/naver.png";
 import polideaImg from "../../../images/polidea.png";
 import katalonImg from "../../../images/katalon.jpeg";
@@ -26,13 +29,29 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
     style={{ display: "none" }}
   >
     <Title className="major">Work</Title>
+    <FoodpandaExp>
+      <span className="main">
+        <FoodpandaImg src={foodpandaImg} alt="foodpanda" />
+      </span>
+      <Column>
+        <Position>Software Engineer</Position>
+        <Company>12/2021 - Present at Foodpanda - Singapore</Company>
+        <Description>
+          Foodpanda is an online food and grocery delivery platform owned by
+          Delivery Hero. It is currently the largest food and grocery delivery
+          platform in Asia, outside of China, operating in 12 markets across
+          Asia, while Delivery Hero operates in 50+ countries internationally
+          and partners with 500,000+ restaurants.
+        </Description>
+      </Column>
+    </FoodpandaExp>
     <LineExp>
       <span className="main">
         <LineImg src={naverImg} alt="NAVER" />
       </span>
       <Column>
         <Position>Software Engineer</Position>
-        <Company>10/2020 - Present at NAVER Corp - Vietnam</Company>
+        <Company>10/2020 - 12/2021 at NAVER Corp - Vietnam</Company>
         <Description>
           NAVER Co., Ltd. is South Korea’s largest web search engine, as well as
           a global ICT brand that provides services including LINE messenger,

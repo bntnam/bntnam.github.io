@@ -9,6 +9,27 @@ export const Title = styled.h2`
   color: #222f3e;
 `;
 
+export const FoodpandaExp = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+`;
+
+export const FoodpandaImg = styled.img`
+  width: 6.5rem;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  border-radius: 50%;
+
+  @media (max-width: 576px) {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+`;
+
 export const LineExp = styled.div`
   display: flex;
   flex-direction: row-reverse;
