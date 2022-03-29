@@ -79,7 +79,7 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
             React Hook Form
           </ExternalLink>
         </ProjectName>
-        <Text>React hooks for forms validation without the hassle</Text>
+        <Text>React hooks for forms validation without the hassle.</Text>
       </Column>
     </OpenSource>
     <VerticalPadding />
