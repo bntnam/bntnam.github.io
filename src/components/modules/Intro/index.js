@@ -1,7 +1,7 @@
 import React from "react";
 
 import { VerticalPadding, Title, Text, ProfileImg } from "./style";
-import profileImg from "../../../images/profile.png";
+import profileImg from "../../../images/profile.jpg";
 
 const IntroArticle = ({ article, articleTimeout, close }) => (
   <article
@@ -12,17 +12,14 @@ const IntroArticle = ({ article, articleTimeout, close }) => (
     style={{ display: "none" }}
   >
     <Title className="major">Intro</Title>
-    <span className="main">
-      <ProfileImg src={profileImg} alt="Profile" />
-    </span>
+    <ProfileImg src={profileImg} alt="Profile" />
     <VerticalPadding />
     <Text>
-      I am a Front-End Software Engineer with professional experience building
-      the Responsive Web Design and Progressive Web Application. I specialize in
-      JavaScript and its ecosystem such as React, Gatsby, Next, and Node with
-      hands-on experience of handling Universal Javascript, Client Side
-      Rendering, Server Side Rendering and Static Site Generation applications.
-      Moreover, learning new technologies is what I am passionate about.
+      I am a Software Engineer with years of professional experience building
+      global products in various markets for millions of users. During my
+      journey, I have had opportunities to say "hi!" to talented teammates from
+      different countries in many workplaces, such as Poland, Vietnam, and now
+      Singapore.
     </Text>
     <VerticalPadding />
     {close}

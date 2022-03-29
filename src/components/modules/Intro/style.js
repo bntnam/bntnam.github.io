@@ -16,12 +16,14 @@ export const Button = styled.div`
 
 export const Text = styled.p`
   margin: 0;
+  text-align: center;
 `;
 
 export const ProfileImg = styled.img`
-  width: 12rem;
+  width: 10rem;
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 `;
 
 export const ExternalLink = styled.a`
