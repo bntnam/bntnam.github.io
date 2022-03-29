@@ -158,50 +158,6 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
         <ProjectName>
           <ExternalLink
             className="url"
-            href="https://utilodesign.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Utilo
-          </ExternalLink>
-        </ProjectName>
-        <TechBox>
-          {renderTechItems([
-            "React",
-            "Gatsby",
-            "Node",
-            "Styled Components",
-            "Styled Systems",
-            "Storybook",
-            "HTML",
-            "CSS",
-          ])}
-        </TechBox>
-        <ProjectName>
-          <ExternalLink
-            className="url"
-            href="https://www.polidea.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Polidea
-          </ExternalLink>
-        </ProjectName>
-        <TechBox>
-          {renderTechItems([
-            "React",
-            "Gatsby",
-            "Strapi",
-            "Storybook",
-            "Styled Components",
-            "Styled Systems",
-            "HTML",
-            "CSS",
-          ])}
-        </TechBox>
-        <ProjectName>
-          <ExternalLink
-            className="url"
             href="https://bntn-devchat.firebaseapp.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -244,6 +200,50 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
           {renderTechItems([
             "React",
             "Gatsby",
+            "Styled Components",
+            "Styled Systems",
+            "HTML",
+            "CSS",
+          ])}
+        </TechBox>
+        <ProjectName>
+          <ExternalLink
+            className="url"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Utilo
+          </ExternalLink>
+        </ProjectName>
+        <TechBox>
+          {renderTechItems([
+            "React",
+            "Gatsby",
+            "Node",
+            "Styled Components",
+            "Styled Systems",
+            "Storybook",
+            "HTML",
+            "CSS",
+          ])}
+        </TechBox>
+        <ProjectName>
+          <ExternalLink
+            className="url"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Polidea
+          </ExternalLink>
+        </ProjectName>
+        <TechBox>
+          {renderTechItems([
+            "React",
+            "Gatsby",
+            "Strapi",
+            "Storybook",
             "Styled Components",
             "Styled Systems",
             "HTML",
