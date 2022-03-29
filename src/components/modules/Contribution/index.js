@@ -115,6 +115,28 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
         <ProjectName>
           <ExternalLink
             className="url"
+            href="https://www.foodpanda.sg/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Foodpanda
+          </ExternalLink>
+        </ProjectName>
+        <TechBox>
+          {renderTechItems([
+            "Micro-Frontends",
+            "React",
+            "Redux",
+            "Storybook",
+            "React Testing Library",
+            "Docker",
+            "HTML",
+            "SCSS",
+          ])}
+        </TechBox>
+        <ProjectName>
+          <ExternalLink
+            className="url"
             href="https://www.vlive.tv/"
             target="_blank"
             rel="noopener noreferrer"
