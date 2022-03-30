@@ -4,10 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Software Engineer - Nam",
+    title: "Software Engineer - Nam Bui",
     author: "Nam Bui",
     description:
-      "Hi I'm Nam or JKey. A Software Engineer who is trying to be more full-stack day by day. 🔥🔥🔥",
+      "Nam is a Software Engineer with years of professional experience building global products in various markets for millions of users.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
