@@ -7,7 +7,9 @@ module.exports = {
     title: "Software Engineer - Nam Bui",
     author: "Nam Bui",
     description:
-      "Nam is a Software Engineer with years of professional experience building global products in various markets for millions of users.",
+      "Nam is a Software Engineer with years of professional experience building global products for millions of users.",
+    siteUrl: "https://bntnam.com",
+    imageUrl: "/img/profile/profile.jpg",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

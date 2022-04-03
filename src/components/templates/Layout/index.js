@@ -28,26 +28,40 @@ const Layout = ({ children, location }) => {
               title
               author
               description
+              siteUrl
+              imageUrl
             }
           }
         }
       `}
-      render={data => (
-        <>
-          <Helmet
-            title={data.site.siteMetadata.title}
-            link={[{ rel: "shortcut icon", href: "/logo.ico" }]}
-          >
-            <meta name="author" content={data.site.siteMetadata.author} />
-            <meta
-              name="description"
-              content={data.site.siteMetadata.description}
-            />
-          </Helmet>
-          <GlobalStyle />
-          {content}
-        </>
-      )}
+      render={data => {
+        const {
+          title,
+          author,
+          description,
+          siteUrl,
+          imageUrl,
+        } = data.site.siteMetadata;
+
+        return (
+          <>
+            <Helmet
+              title={title}
+              link={[{ rel: "shortcut icon", href: "/logo.ico" }]}
+            >
+              <meta name="author" content={author} />
+              <meta name="description" content={description} />
+              <meta property="og:url" content={siteUrl} />
+              <meta property="og:title" content={title} />
+              <meta property="og:author" content={author} />
+              <meta property="og:description" content={description} />
+              <meta property="og:image" content={`${siteUrl}${imageUrl}`} />
+            </Helmet>
+            <GlobalStyle />
+            {content}
+          </>
+        );
+      }}
     />
   );
 };
