@@ -16,7 +16,7 @@ const IntroArticle = ({ article, articleTimeout, close }) => (
     <VerticalPadding />
     <Text>
       I am a Software Engineer with years of professional experience building
-      global products in various markets for millions of users. During my
+      global products to serve millions of users in various markets. During my
       journey, I have had opportunities to say "hi!" to talented teammates from
       different countries in many workplaces, such as Poland, Vietnam, and now
       Singapore.
