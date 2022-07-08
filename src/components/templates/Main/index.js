@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { MainWrapper } from "./style";
-import Intro from "../../modules/Intro";
-import Work from "../../modules/Work";
-import Contribution from "../../modules/Contribution";
-import Contact from "../../modules/Contact";
+import Intro from "@components/modules/Intro";
+import Work from "@components/modules/Work";
+import Contribution from "@components/modules/Contribution";
+import Contact from "@components/modules/Contact";
 
 const Main = ({
   article,

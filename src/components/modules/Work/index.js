@@ -15,10 +15,10 @@ import {
   LineExp,
   LineImg,
 } from "./style";
-import foodpandaImg from "../../../images/foodpanda.png";
-import naverImg from "../../../images/naver.png";
-import polideaImg from "../../../images/polidea.png";
-import katalonImg from "../../../images/katalon.jpeg";
+import foodpandaImg from "@images/foodpanda.png";
+import naverImg from "@images/naver.png";
+import polideaImg from "@images/polidea.png";
+import katalonImg from "@images/katalon.jpeg";
 
 const WorkArticle = ({ article, articleTimeout, close }) => (
   <article

@@ -17,9 +17,9 @@ import {
   ExternalLink,
 } from "./style";
 
-import sideProjectImg from "../../../images/project.png";
-import openSourceImg from "../../../images/open-source.png";
-import talkImg from "../../../images/talk.png";
+import sideProjectImg from "@images/project.png";
+import openSourceImg from "@images/open-source.png";
+import talkImg from "@images/talk.png";
 
 const renderTechItems = items => {
   return items.map((item, index) => <TechItem key={index}>{item}</TechItem>);

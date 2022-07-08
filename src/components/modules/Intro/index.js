@@ -1,7 +1,7 @@
 import React from "react";
 
 import { VerticalPadding, Title, Text, ProfileImg } from "./style";
-import profileImg from "../../../images/profile.jpg";
+import profileImg from "@images/profile.jpg";
 
 const IntroArticle = ({ article, articleTimeout, close }) => (
   <article
