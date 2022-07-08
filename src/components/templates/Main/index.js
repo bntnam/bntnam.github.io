@@ -7,51 +7,43 @@ import Work from "../../modules/Work";
 import Contribution from "../../modules/Contribution";
 import Contact from "../../modules/Contact";
 
-class Main extends React.Component {
-  render() {
-    const {
-      article,
-      articleTimeout,
-      setWrapperRef,
-      timeout,
-      onCloseArticle,
-    } = this.props;
+const Main = ({
+  article,
+  articleTimeout,
+  setWrapperRef,
+  timeout,
+  onCloseArticle,
+}) => {
+  const close = (
+    <div
+      className="close"
+      onClick={() => {
+        onCloseArticle();
+      }}
+    ></div>
+  );
 
-    const close = (
-      <div
-        className="close"
-        onClick={() => {
-          onCloseArticle();
-        }}
-      ></div>
-    );
-
-    return (
-      <MainWrapper
-        ref={setWrapperRef}
-        id="main"
-        style={timeout ? { display: "flex" } : { display: "none" }}
-      >
-        <Intro
-          article={article}
-          articleTimeout={articleTimeout}
-          close={close}
-        />
-        <Work article={article} articleTimeout={articleTimeout} close={close} />
-        <Contribution
-          article={article}
-          articleTimeout={articleTimeout}
-          close={close}
-        />
-        <Contact
-          article={article}
-          articleTimeout={articleTimeout}
-          close={close}
-        />
-      </MainWrapper>
-    );
-  }
-}
+  return (
+    <MainWrapper
+      ref={setWrapperRef}
+      id="main"
+      style={timeout ? { display: "flex" } : { display: "none" }}
+    >
+      <Intro article={article} articleTimeout={articleTimeout} close={close} />
+      <Work article={article} articleTimeout={articleTimeout} close={close} />
+      <Contribution
+        article={article}
+        articleTimeout={articleTimeout}
+        close={close}
+      />
+      <Contact
+        article={article}
+        articleTimeout={articleTimeout}
+        close={close}
+      />
+    </MainWrapper>
+  );
+};
 
 Main.propTypes = {
   route: PropTypes.object,
