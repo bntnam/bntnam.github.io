@@ -1,114 +1,72 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 
 import Layout from "@components/templates/Layout";
 import Header from "@components/templates/Header";
 import Main from "@components/templates/Main";
 import Footer from "@components/templates/Footer";
+import { useOutsideClick } from "@hooks/useOutsideClick";
 
-class IndexPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isArticleVisible: false,
-      timeout: false,
-      articleTimeout: false,
-      article: "",
-      loading: "is-loading",
-    };
-  }
+const IndexPage = ({ location }) => {
+  const [isArticleVisible, setIsArticalVisible] = useState(false);
+  const [isTimeout, setIsTimeout] = useState(false);
+  const [isArticleTimeout, setIsArticalTimeout] = useState(false);
+  const [article, setArtical] = useState("");
+  const [loading, setLoading] = useState("is-loading");
 
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: "" });
-    }, 1000);
-    document.addEventListener("mousedown", this.handleClickOutside);
-  }
-
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-    document.removeEventListener("mousedown", this.handleClickOutside);
-  }
-
-  setWrapperRef = node => {
-    this.wrapperRef = node;
-  };
-
-  handleOpenArticle = article => {
-    this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
-      article,
-    });
+  const handleOpenArticle = useCallback(article => {
+    setIsArticalVisible(true);
+    setArtical(article);
 
     setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-      });
+      setIsTimeout(true);
     }, 325);
 
     setTimeout(() => {
-      this.setState({
-        articleTimeout: !this.state.articleTimeout,
-      });
+      setIsArticalTimeout(true);
     }, 350);
-  };
+  }, []);
 
-  handleCloseArticle = () => {
-    this.setState({
-      articleTimeout: !this.state.articleTimeout,
-    });
+  const handleCloseArticle = useCallback(() => {
+    setIsArticalTimeout(false);
 
     setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-      });
+      setIsTimeout(false);
     }, 325);
 
     setTimeout(() => {
-      this.setState({
-        isArticleVisible: !this.state.isArticleVisible,
-        article: "",
-      });
+      setIsArticalVisible(false);
+      setArtical("");
     }, 350);
-  };
+  }, []);
 
-  handleClickOutside = event => {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      if (this.state.isArticleVisible) {
-        this.handleCloseArticle();
-      }
-    }
-  };
+  const { wrapperRef } = useOutsideClick({
+    handleCloseArticle,
+    isArticleVisible,
+    setLoading,
+  });
 
-  render() {
-    return (
-      <Layout location={this.props.location}>
-        <div
-          className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? "is-article-visible" : ""
-          }`}
-        >
-          <div id="wrapper">
-            <Header
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
-            <Main
-              isArticleVisible={this.state.isArticleVisible}
-              timeout={this.state.timeout}
-              articleTimeout={this.state.articleTimeout}
-              article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
-              setWrapperRef={this.setWrapperRef}
-            />
-            <Footer timeout={this.state.timeout} />
-          </div>
-          <div id="bg"></div>
+  return (
+    <Layout location={location}>
+      <div
+        className={`body ${loading} ${
+          isArticleVisible ? "is-article-visible" : ""
+        }`}
+      >
+        <div id="wrapper">
+          <Header onOpenArticle={handleOpenArticle} timeout={isTimeout} />
+          <Main
+            ref={wrapperRef}
+            timeout={isTimeout}
+            articleTimeout={isArticleTimeout}
+            article={article}
+            onCloseArticle={handleCloseArticle}
+          />
+          <Footer timeout={isTimeout} />
         </div>
-      </Layout>
-    );
-  }
-}
+        <div id="bg"></div>
+      </div>
+    </Layout>
+  );
+};
 
 export default IndexPage;

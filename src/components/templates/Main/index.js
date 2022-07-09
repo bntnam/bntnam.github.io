@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 
 import { MainWrapper } from "./style";
@@ -7,43 +7,43 @@ import Work from "@components/modules/Work";
 import Contribution from "@components/modules/Contribution";
 import Contact from "@components/modules/Contact";
 
-const Main = ({
-  article,
-  articleTimeout,
-  setWrapperRef,
-  timeout,
-  onCloseArticle,
-}) => {
-  const close = (
-    <div
-      className="close"
-      onClick={() => {
-        onCloseArticle();
-      }}
-    ></div>
-  );
+const Main = forwardRef(
+  ({ article, articleTimeout, timeout, onCloseArticle }, ref) => {
+    const close = (
+      <div
+        className="close"
+        onClick={() => {
+          onCloseArticle();
+        }}
+      ></div>
+    );
 
-  return (
-    <MainWrapper
-      ref={setWrapperRef}
-      id="main"
-      style={timeout ? { display: "flex" } : { display: "none" }}
-    >
-      <Intro article={article} articleTimeout={articleTimeout} close={close} />
-      <Work article={article} articleTimeout={articleTimeout} close={close} />
-      <Contribution
-        article={article}
-        articleTimeout={articleTimeout}
-        close={close}
-      />
-      <Contact
-        article={article}
-        articleTimeout={articleTimeout}
-        close={close}
-      />
-    </MainWrapper>
-  );
-};
+    return (
+      <MainWrapper
+        ref={ref}
+        id="main"
+        style={timeout ? { display: "flex" } : { display: "none" }}
+      >
+        <Intro
+          article={article}
+          articleTimeout={articleTimeout}
+          close={close}
+        />
+        <Work article={article} articleTimeout={articleTimeout} close={close} />
+        <Contribution
+          article={article}
+          articleTimeout={articleTimeout}
+          close={close}
+        />
+        <Contact
+          article={article}
+          articleTimeout={articleTimeout}
+          close={close}
+        />
+      </MainWrapper>
+    );
+  }
+);
 
 Main.propTypes = {
   route: PropTypes.object,
@@ -51,7 +51,8 @@ Main.propTypes = {
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
 };
+
+Main.displayName = "Main";
 
 export default Main;
