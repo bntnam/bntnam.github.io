@@ -228,50 +228,6 @@ const ContributionArticle = ({ article, articleTimeout, close }) => (
             "CSS",
           ])}
         </TechBox>
-        <ProjectName>
-          <ExternalLink
-            className="url"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Utilo
-          </ExternalLink>
-        </ProjectName>
-        <TechBox>
-          {renderTechItems([
-            "React",
-            "Gatsby",
-            "Node",
-            "Styled Components",
-            "Styled Systems",
-            "Storybook",
-            "HTML",
-            "CSS",
-          ])}
-        </TechBox>
-        <ProjectName>
-          <ExternalLink
-            className="url"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Polidea
-          </ExternalLink>
-        </ProjectName>
-        <TechBox>
-          {renderTechItems([
-            "React",
-            "Gatsby",
-            "Strapi",
-            "Storybook",
-            "Styled Components",
-            "Styled Systems",
-            "HTML",
-            "CSS",
-          ])}
-        </TechBox>
       </Column>
     </SideProject>
     {close}
