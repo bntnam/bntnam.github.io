@@ -5,14 +5,14 @@
   "author": "Nam Bui",
   "dependencies": {
     "@sentry/gatsby": "^6.12.0",
-    "gatsby": "^2.19.5",
-    "gatsby-plugin-manifest": "^2.2.38",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sass": "^2.1.27",
-    "node-sass": "^4.13.1",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-helmet": "^5.2.0",
+    "gatsby": "^5.3.2",
+    "gatsby-plugin-manifest": "^5.3.1",
+    "gatsby-plugin-react-helmet": "^6.3.0",
+    "gatsby-plugin-sass": "^6.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.56.2",
     "styled-components": "^4.3.2"
   },
   "keywords": [

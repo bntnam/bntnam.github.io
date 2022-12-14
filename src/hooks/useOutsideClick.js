@@ -10,7 +10,6 @@ export const useOutsideClick = ({
   useEffect(() => {
     const handleClickOutside = event => {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-        console.log("click outside");
         if (isArticleVisible) {
           handleCloseArticle();
         }
