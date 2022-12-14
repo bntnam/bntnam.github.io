@@ -73,8 +73,9 @@ const WorkArticle = ({ article, articleTimeout, close }) => (
           decade, Snowflake has become a global force to help mobilize the
           world’s data. <br />
           Back then, Polidea delivered digital solutions that empowered people
-          and businesses. Together, we created intuitive digital interfaces,
-          enabling smooth interactions between people and technology.
+          and businesses. In partnership with Google, we created intuitive
+          digital interfaces, enabling smooth interactions between people and
+          technology.
         </Description>
       </Column>
     </PolideaExp>
